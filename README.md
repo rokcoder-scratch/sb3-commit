@@ -1,4 +1,4 @@
-# sb3-to-txt-shell
+# sb3-commit
 
 Folder structure and batch file for using GitHub effectively with Scratch 3.0 projects
 --------------------------------------------------------------------------------------
