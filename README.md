@@ -4,8 +4,6 @@
   <img width="640" height="320" src="https://user-images.githubusercontent.com/20208339/119164337-38ece300-ba54-11eb-8a0e-0ea0b9dbaea4.png">
 </p>
 
-![image]()
-
 Automation of GitHub commits for Scratch 3.0 projects (with scripts converted to text)
 --------------------------------------------------------------------------------------
 
