@@ -1,5 +1,7 @@
 # sb3-commit
 
+![image showing_use](https://www.rokcocer.com/sb3-to-txt/images/reduced-scale-github.png)
+
 Automation of GitHub commits for Scratch 3.0 projects (with scripts converted to text)
 --------------------------------------------------------------------------------------
 
