@@ -33,18 +33,20 @@ OTHER NOTES
 
     Add any other folders or files that you want added to the repository. I tend to have 'source-graphics' for GIMP layered graphic files, 'source-sfx' for pre-squashed sound effects, 'data' for data, etc.
 
+HOW TO SET UP
+-------------
+    1) Download the repository as a zip file and extract it to your project folder (e.g. into d:/projects/beeb-emulator). This will create several subfolders, the most important of which will be ./bin because that will contain commit.bat
+    2) Ensure your system is set up with "what it needs". If you're using a different platform or different tools then the batch file will need modification to match.
+    3) Edit the commit.bat file for the project you're working on -
+        i) Set PROJECT to the project id of your Scratch project - set to RokCoder's Beeb Emulator by default (531881458)
+        ii) Set UNZIP to point to your 7z.exe file - assuming you have installed 7z then this is probably already pointing to it
+    4) Create a GitHub repository for your project folder
+    
 HOW TO USE
 ----------
-    Assuming your system contains is set up with "what it needs" then in the batch file -
-
-        Steps that need performing only once per project -
-
-            1) Set PROJECT to the project id of your Scratch project - set to RokCoder's Beeb Emulator by default (531881458)
-            2) Set UNZIP to point to your 7z.exe file - assuming you have installed 7z then this is probably already pointing to it
-
-        Steps to perform each time -
-
-            3) Run the batch file
+    1) Run the batch file
+    2) When GitHub Desktop opens, ensure it's using the correct repository
+    3) Enter your commit message and hit the commit button
 
 FOR OTHER PLATFORMS AND TOOLS
 -----------------------------
