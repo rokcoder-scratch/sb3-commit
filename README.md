@@ -1,6 +1,6 @@
 # sb3-commit
 
-Folder structure and batch file for using GitHub effectively with Scratch 3.0 projects
+Automation of GitHub commits for Scratch 3.0 projects (with scripts converted to text)
 --------------------------------------------------------------------------------------
 
 WHAT IT DOES
