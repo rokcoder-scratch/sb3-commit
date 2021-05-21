@@ -51,3 +51,7 @@ HOW TO USE
 FOR OTHER PLATFORMS AND TOOLS
 -----------------------------
     If you adapt the batch file for anything other than Windows 10, 7z and GitHub Desktop then please feel free to open a pull request to have them added for others to use
+
+ROKCODER REQUEST
+----------------
+If you find this useful, please comment to https://scratch.mit.edu/discuss/topic/515487/ to bump the forum post. Doing that will mean other Scratchers might become aware of this tool and also find it useful for their projects. Thank you!
