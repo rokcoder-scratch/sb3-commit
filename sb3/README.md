@@ -1,0 +1,1 @@
+The project.sb3 file will be extracted to this folder
