@@ -44,11 +44,11 @@ goto wait
 :ready
 
 rem Extracts the textified scripts into ../scripts, the current project sb3 into ../sb3 and a few useful text files into ../assets
-%UNZIP% x -o%~dp0.. -bso0 -bd %DOWNLOAD%\%PROJECT%.zip
+%UNZIP% x -o"%~dp0.." -bso0 -bd %DOWNLOAD%\%PROJECT%.zip
 
 rem Extracts all of the assets from the project's sb3 file into the assets folder
 cd %~dp0..\assets\
-%UNZIP% x -o. -bso0 -bse0 -bd %~dp0..\sb3\%PROJECT%.sb3 *.mp3 *.wav *.png *.jpg *.svg *.bmp *.jpeg *.gif
+%UNZIP% x -o. -bso0 -bse0 -bd "%~dp0..\sb3\%PROJECT%.sb3" *.mp3 *.wav *.png *.jpg *.svg *.bmp *.jpeg *.gif
 
 @echo Relocating parsed scripts and assets to correct folders
 
@@ -68,8 +68,8 @@ exit /b
 
 rem Nice little function to clean folders
 :clean
-if exist %~dp0..\%1 rmdir /S /Q %~dp0..\%1
-mkdir %~dp0..\%1
+if exist "%~dp0..\%1" rmdir /S /Q "%~dp0..\%1"
+mkdir "%~dp0..\%1"
 exit /b
 
 rem Useful function found on StackOverflow. Completely full of black magic but successfully locates the download folder
