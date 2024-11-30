@@ -28,6 +28,7 @@ del "%DOWNLOAD%\%PROJECT%.zip" 1> nul
 
 rem Clean out any existing folders used by this process. We need to do this otherwise files that have been removed will not be removed from the repository
 call :clean scripts
+call :clean assets
 
 @echo Parsing project at rokcoder.com/sb3-to-txt
 
@@ -46,6 +47,20 @@ goto wait
 
 rem Extracts the textified scripts into ../scripts
 %UNZIP% x -o"%~dp0.." -bso0 -bd %DOWNLOAD%\%PROJECT%.zip
+
+rem Extracts all of the assets from the project's sb3 file into the assets folder
+cd %~dp0..\assets\
+%UNZIP% x -o. -bso0 -bse0 -bd %~dp0..\sb3\%PROJECT%.sb3 *.mp3 *.wav *.png *.jpg *.svg *.bmp *.jpeg *.gif
+
+@echo Relocating parsed scripts and assets to correct folders
+
+rem Use the first useful text file to create subfolders for sprites that are going to receive assets (and then remove it)
+for /F "usebackq delims=" %%a in ("assetFolders.txt") do mkdir %%a 1> nul 2> nul
+del assetFolders.txt 1> nul 2> nul
+
+rem Use the second useful text file to move assets into their correct subfolders (and then remove it) - note that an asset shared by multiple sprites will only appear in the first sprite's subfolder
+for /F "usebackq delims=" %%a in ("assoc.txt") do move %%a 1> nul 2> nul
+del assoc.txt 1> nul 2> nul
 
 rem Fire up GitHub Desktop
 github %~dp0..
