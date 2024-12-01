@@ -10,7 +10,7 @@ rem -     7z
 rem - Batch file will need modifying if alternatives are used
 rem -
 rem - Brief overview
-rem -     1) Set PROJECT to the project id of your Scratch project - set to RokCoder's Beeb Emulator by default (531881458)
+rem -     1) Set PROJECT to the name of your Scratch project (no spaces and without the .sb3 extension) stored locally in the sb3 folder
 rem -     2) Set UNZIP to point to your 7z.exe file - assuming you have installed 7z then this is probably already pointing to it
 rem -     3) Make sure you have GitHub Desktop installed and on the PATH
 rem -     4) That's it! Just run this batch file to see the magic happen...
